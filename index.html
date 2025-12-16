@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="" id="counterlabel">0</label>
+
+    <div id="btnContainer">
+        <button id="increaseBtn" class="buttons">Increase</button>
+        <button id="resetBtn" class="buttons">Reset</button>
+        <button id="decreaseBtn" class="buttons">Decrease</button>
+    </div>
+
+
+
+
+
+    <script>
+    const increaseBtn = document.getElementById("increaseBtn");
+    const decreaseBtn = document.getElementById("decreaseBtn");
+    const resetBtn = document.getElementById("resetBtn");
+    const counterlabel = document.getElementById("counterlabel");
+
+    let count = 0;
+
+    increaseBtn.onclick = () => {
+    count++;
+    counterlabel.textContent = count;
+    }
+
+    decreaseBtn.onclick = () => {
+    count--;
+    counterlabel.textContent = count;
+    }
+ 
+    resetBtn.onclick = () => {
+    count = 0;
+    counterlabel.textContent = count;
+    }
+
+    
+
+
+    </script>
+</body>
+</html>
